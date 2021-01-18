@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/respond.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <!--CSS is Linked Below, Do not to change Name-->      
+    <link rel="stylesheet" type="text/css" href="Style.css">
+      
+    <!--Javascript is Linked Below, Do not change Name-->
+          <script src="Main.js"></script>
+       
+          <title>Best buy</title>
+      
+      <style>  
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+/*Top Header*/
+#container{
+    padding-left: 225px;
+    padding-right: 225px;
+}
+
+#nav-line{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+#navbar{
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #010101;
+    border-top: 3px;
+    border-top-style: solid;
+    border-bottom-color: #010101;
+    border-left: 3px;
+    border-left-style: solid;
+    border-left-color: #010101;
+    border-right: 3px;
+    border-right-style: solid;
+    border-right-color: #010101;
+    background-color: #6D6B6B;
+}
+
+#nav-line:hover{
+    color: #ffffff;
+    background: #939292;
+}
+
+#head-nav{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#head-nav-drop{
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.vl {
+    border-left: 3px solid black;
+    height: 20px;
+}
+
+#user{
+    overflow-y: hidden;
+}
+
+
+
+/*Top Header is finished*/
+
+/*Header NavBar*/
+.navbar-custom{
+    background-color: #DEDEDE;
+    border-bottom: 3px;
+    border-top: 2px;
+    border-left: 3px;
+    border-right: 3px;
+    border-style: solid;
+    border-top-color: #727272;
+    border-bottom-color: #727272;
+    border-right-color: #727272;
+    border-left-color: #727272;
+}
+
+#row-left{
+    margin-left: 20px;
+}
+
+#row-right{
+    float: right;
+    padding-top: 2px;
+    margin-left: 350px;
+}
+
+/*Search Bar*/
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/*Search bar finishes*/
+
+#cart{
+    padding-left: 10px;
+    padding-bottom: 1px;
+}
+
+/*Header NavBar*/
+
+  
+
+/*Products Tag*/
+.legend{
+    padding-left: 0px;
+    color: #0061FF;
+}
+
+/*Footer*/
+#footer-top{
+    background-color: #DEDEDE;
+}
+
+#sub-box{
+    padding-top: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+#space{
+    padding-top: 15px;
+}
+
+#social{
+    padding-left: 5px;
+}
+
+#copy-name{
+    text-decoration:none;
+    color: white;
+}
+
+/*Scroll Up*/
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+/*    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);*/
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: #ACACAC;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color:gray;
+    color: #000;
+}
+
+.navbar-brand
+{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:grey;
+  font-size: 24px;
+  margin: 0px;
+  width: 250px;
+
+}
+
+/*Products Tag*/
+.legend{
+    padding-left: 0px;
+    color: #0061FF;
+}
+
+.pagination {
+    align-content: center;
+    display: flex;
+  justify-content:center;
+}
+
+.d-flex{
+    font-family:monospace;
+    font-size:x-large;
+    background-color:white;
+    color:black
+}
+        </style>
+    </head>
+    <body>
+
+         <!-----------------------------------java script-------------------->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+        
+
+<!--Javascript Link-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+<!--Header Begins From Here...-->
+<header>
+<!--Top Header-->
+
+<!-- As a heading -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark main-nav" id="navbar">
+        <div class="container" id="container">
+    
+            
+            <div class="navbar-collapse collapse nav-content order-2">
+                <ul class="nav navbar-nav nav-line">
+                    <li class="nav-item"><a class="nav-link" href="Index.html"><img src="pics/logo.jpg" width="200" height="70" alt=""></a></li>    
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>       
+                </ul>
+        </div>
+        <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
+                
+            <nav class="navbar navbar-light bg-dark">
+                <span class="navbar-brand mb-0 h1">Online Amuthu Kade</span>
+              </nav>
+        
+        </div>
+
+          <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
+            <ul class="nav navbar-nav nav-line">
+                <li class="nav-item"><a class="nav-link" href="home.html"><img src="pics/logo2.jpg" width="200" height="70" alt=""></a></li>    
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>       
+            </ul>
+    </div>
+        </div>
+
+        <div class="dropdown dropleft">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><img src="pics/avatar1.png" height="75px;" width="75px;" data-toggle="dropdown" class="dropdown-toggle"> 
+                    <ul class="dropdown-menu" id="user">
+                        <li>
+                            <a class="dropdown-item" href="form.html"><i class="fas fa-sign-in-alt"></i> Login<a class="dropdown-item" href="Sign.html"><i class="fas fa-user-plus"></i> Signup</a><a class="dropdown-item" href="home.html"><i class="fas fa-user-alt"></i> Profile</a>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>    
+    </nav>        
+    </nav>
+
+<!--Top Header is Finished-->
+    
+<!--Header Navigation Bar-->
+
+
+<nav class="navbar navbar-expand-md navbar-fixed-top navbar-light navbar-custom">
+    <div class="row">
+		<ul class="nav navbar-nav w-100" id="row-left">
+            
+			<li class="nav-item dropdown">
+                    
+                <button type="button" class="btn dropdown-toggle" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars" style="padding-right: 2px; padding-left: 5px; margin-left: 2px;" id="head-nav-drop"></i>  Categories
+                </button>
+                
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+					<li><a class="dropdown-item" href="#">Computer accessories</a></li>
+                    <li><a class="dropdown-item" href="f&v.html">Fruits &amp; Vegitables</a></li>
+                    <li><a class="dropdown-item" href="#">Grocery Items</a></li>
+                    <li><a class="dropdown-item" href="#">feedback</a></li>
+                    <li><a class="dropdown-item" href="#">Manufacture details</a></li>
+				</ul>
+                
+			</li>
+            
+			<li class="nav-item"  id="head-nav">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+            
+			<li class="nav-item"  id="head-nav">
+				<a class="nav-link" href="#">About us</a>
+			</li>
+            
+			<li class="nav-item"  id="head-nav">
+				<a class="nav-link" href="#">Catalog</a>
+			</li>
+            
+			<li class="nav-item"  id="head-nav">
+				<a class="nav-link" href="bestbuy.html">Best buy</a>
+			</li>
+            
+            <li class="nav-item" id="row-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                        </button>
+                        </div>
+                </div>
+            </li>
+            
+            <li class="nav-item" id="cart">
+                <a class="nav-link" href="#"> <B></B> <img src="pics/cart.jpg" height="30px;" width="60px;"></a>
+            </li>
+            
+		</ul>
+    </div>
+</nav>
+<!--Header Navigation Bar Finished-->
+
+  <!-----------------------navigate to previous ------------------------------>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark breadcrumb-light">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Best Buy</li>
+    </ol>
+  </nav>
+<!-----------------------------small title---------------------------->
+  
+<div class="d-flex justify-content-center">Always go for best than the cheap...</div>
+
+<!--Most Popular Products-->
+<div class="container" id="products-box">
+    <div class="row">
+          <legend class="legend"><a href="#" style="text-decoration: none">Most Popular Products</a></legend>
+      </div>
+      <div class="row" id="items">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/laptop.jpg" alt="apple">
+            <div class="card-body">
+              <h3 class="card-title">HP 14 series laptop</h3>
+              <p class="card-text">AMD 3020e 4GB RAM 64GB eMMc Jet Black</p>
+              <p class="card-text">Condition : brand new</p>
+              <p class="card-text">Rs. 199,000</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/anchor.jpg" alt="cake">
+            <div class="card-body">
+              <h3 class="card-title">Anchor</h3>
+              <p class="card-text">High quality & imported from newzeland</p>
+              <p class="card-text">1 kg</p>
+              <p class="card-text">Rs.950</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/mouse.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">SUPER-MOUSE</h3>
+              <p class="card-text">Top-Qualität PS2 + USB super schnell</p>
+              <p class="card-text">Rs 3000</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/beats.jpg" alt="Teddy">
+            <div class="card-body">
+              <h3 class="card-title">Beats headphone</h3>
+              <p class="card-text">Wireless Headphones BLACK</p>
+              <p class="card-text">Rs. 5,700</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+<!--New Arrivals-->
+    
+    <div class="container" id="products-box">
+    <div class="row">
+        <legend class="legend"><a href="#" style="text-decoration: none">New Arrivals</a></legend>
+      </div>
+      <div class="row" id="items">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/router.jpg" alt="Scooby Doo Cake">
+            <div class="card-body">
+              <h3 class="card-title">ASUS RT-AC88U</h3>
+              <p class="card-text">AC88U 3167 Mbps Gigabit Wireless AC Router (90IG01Z0-BU2000)</p>
+              <p class="card-text">Rs. 24,750</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/powder.jpg" alt="Watch">
+            <div class="card-body">
+              <h3 class="card-title">Sunlight </h3>
+              <p class="card-text">soon became a household name simply because of its multi-purpose naturess</p>
+              <p class="card-text">1 pack</p>
+              <p class="card-text">Rs. 100</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/mbook.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">mack book pro</h3>
+              <p class="card-text">i5 2.3GHz 8GB RAM 256GB SSD </p>
+              <p class="card-text">/ 2 YEAR WARRANTY </p>
+              <p class="card-text">Rs. 199,900</p>
+            </div>
+            <div class="card-footer"> 
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/marmite.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Marmite</h3>
+              <p class="card-text">high quality</p>
+              <p class="card-text">Rs. 175</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+<!--On Sale-->    
+    
+<div class="container" id="products-box">
+    <div class="row">
+        <legend class="legend"><a href="#" style="text-decoration: none">On Sale Products</a></legend>
+      </div>
+      <div class="row" id="items">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/printer.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Canon Pixma MG7550</h3>
+              <p class="card-text">All-in-One Wireless Inkjet Printer + Extra New Cartidges</p>
+              <p class="card-text">Condition: Used</p>
+              <p class="card-text">Rs. 11,000</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/google.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Wireless Router</h3>
+              <p class="card-text">Google AC-1304 1 Port 1200Mbps</p>
+              <p class="card-text">Rs. 60,000</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/oil.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Coconut oil</h3>
+              <p class="card-text">pure oil</p>
+              <p class="card-text">1 kg</p>
+              <p class="card-text">Rs. 530</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="pics/speaker.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Bookshelf Speakers (pair) Matte Black</h3>
+              <p class="card-text">Bowers & Wilkins 606(series one)</p>
+              <p class="card-text">Rs. 15,000</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+    
+     <!--------------------pagination---------------------------->
+  
+     <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">1 </a>
+          <li class="page-item"><a class="page-link" href="#">2<span class="sr-only">(current)</span></a></li>
+          
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>        
+      
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top" id="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3" id="sub-box">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="email" id="sub-box">Stay in Toch....!</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                        name="email">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Subcribe Now!</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-md-3 footer-links" id="space">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Get to Know Us</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p><a class="scroll-link" href="#" style="text-decoration: none">Company</a></p>
+                                    <p><a href="#" style="text-decoration: none">Contact</a></p>
+                                    <p><a href="#" style="text-decoration: none">FAQ</a></p>
+                                    <p><a href="#" style="text-decoration: none">Blog</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 footer-contact" id="space">
+                            <h4>Contact</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> 320/6, school lane, Walpola,Ragama-Srilanka. </p>
+                            <p><i class="fas fa-phone"></i> Phone: 94768639982 </p>
+                            <p><i class="fas fa-envelope"></i> Email: <a href="info@omg.lk"
+                                    style="text-decoration: none">info@onlineamuthukade.com</a></p>
+                            <!--<p><i class="fab fa-skype"></i> Skype: you_online</p>-->
+                        </div>
+
+                        <div class="col-md-3 col-lg-3 footer-social" id="space">
+                            <h4>Follow us</h4>
+                            <p>
+                                <a href="#" id="social"><i class="fab fa-facebook"></i></a>
+                                <a href="#" id="social"><i class="fab fa-twitter"></i></a>
+                                <a href="#" id="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" id="social"><i class="fab fa-instagram"></i></a>
+                            </p>
+                            <h4>Payments</h4>
+                            <p>
+                                <a href="#"><img src="pics/paypal.png" height="60px;" width="150px;"></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer is finished-->
+
+        
+<!--Scroll Up-->
+
+<a id="back2Top" title="Back to top" href="#"><img src="Uparrow.png" height="40px;" width="40px;"></a>
+   
+</body>
+
+</html>

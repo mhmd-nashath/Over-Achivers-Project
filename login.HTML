@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/respond.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+  
+        <style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c0d5da;
+  height: 100vh;
+
+  
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #2b1818;
+  background-color: #0c5c7c;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+</style>
+    </head>
+    
+    <body>
+            <div id="login">
+                <h2 class="text-center text-white pt-5" >Login Here..
+                </h2>
+                <div class="container">
+                    <div id="login-row" class="row justify-content-center align-items-center">
+                        <div id="login-column" class="col-md-6">
+                            <div id="login-box" class="col-md-12">
+                                <form action="/action_page.php" class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                      <label for="uname">Username:</label>
+                                      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                      <div class="valid-feedback">Valid.</div>
+                                      <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="pwd">Password:</label>
+                                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                      <div class="valid-feedback">Valid.</div>
+                                      <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember" required> Remember me
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                      </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                                    <div id="register-link" class="text-right">
+                                      <a href="#" class="text-info">Forgot password</a>
+                                  </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="all.html">Back to home</a>
+                </li>   
+                </ul>
+        
+                
+<script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+        
+    </body>
+</html>

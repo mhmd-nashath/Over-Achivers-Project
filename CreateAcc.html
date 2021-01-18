@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/respond.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <!--CSS is Linked Below, Do not to change Name-->      
+    <link rel="stylesheet" type="text/css" href="CreateAcc.css">
+      
+    <!--Javascript is Linked Below, Do not change Name-->
+          <script src="Main.js"></script>
+       
+          <title>Create acc</title>
+    
+          <style>  
+            @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+            /*Top Header*/
+            #container{
+                padding-left: 225px;
+                padding-right: 225px;
+            }
+            
+            #nav-line{
+                font-size: 18px;
+                line-height: 30px;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;
+            }
+            
+            #navbar{
+                border-bottom: 4px;
+                border-bottom-style: solid;
+                border-bottom-color: #010101;
+                border-top: 3px;
+                border-top-style: solid;
+                border-bottom-color: #010101;
+                border-left: 3px;
+                border-left-style: solid;
+                border-left-color: #010101;
+                border-right: 3px;
+                border-right-style: solid;
+                border-right-color: #010101;
+                background-color: #6D6B6B;
+            }
+            
+            #nav-line:hover{
+                color: #ffffff;
+                background: #939292;
+            }
+            
+            #head-nav{
+                font-size: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+            }
+            
+            #head-nav-drop{
+                font-size: 18px;
+                padding-top: 5px;
+            }
+            
+            .vl {
+                border-left: 3px solid black;
+                height: 20px;
+            }
+            
+            #user{
+                overflow-y: hidden;
+            }
+            
+            
+            
+            /*Top Header is finished*/
+            
+            /*Header NavBar*/
+            .navbar-custom{
+                background-color: #DEDEDE;
+                border-bottom: 3px;
+                border-top: 2px;
+                border-left: 3px;
+                border-right: 3px;
+                border-style: solid;
+                border-top-color: #727272;
+                border-bottom-color: #727272;
+                border-right-color: #727272;
+                border-left-color: #727272;
+            }
+            
+            #row-left{
+                margin-left: 20px;
+            }
+            
+            #row-right{
+                float: right;
+                padding-top: 2px;
+                margin-left: 350px;
+            }
+            
+            /*Search Bar*/
+            .has-search .form-control {
+                padding-left: 2.375rem;
+            }
+            
+            .has-search .form-control-feedback {
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 2.375rem;
+                height: 2.375rem;
+                line-height: 2.375rem;
+                text-align: center;
+                pointer-events: none;
+                color: #aaa;
+            }
+            /*Search bar finishes*/
+            
+            #cart{
+                padding-left: 10px;
+                padding-bottom: 1px;
+            }
+            
+        
+            
+            /*Products Tag*/
+            .legend{
+                padding-left: 0px;
+                color: #0061FF;
+            }
+            
+            
+            
+            .navbar-brand
+            {
+              font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              color:grey;
+              font-size: 24px;
+              margin: 0px;
+              width: 250px;
+            }
+            
+           
+        </style>
+    </head>
+    </head>
+    <body>
+    <!-----------------------------------java script-------------------->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+            
+    
+    <!--Javascript Link-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        
+   <h1 ><center>Sign up</center> </h1>
+    
+<form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1> <p style='color: white;'>Create Your Account</p></h1>
+      <p style='color: white'>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="fname"><b>First Name</b></label>
+      <input type="text" placeholder="First Name" name="fname" id="First name" value="" required>
+
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="lname" id="Last Name" value="" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="Email" value="" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw"  id="Password" value="" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-repeat" id="Confirm Password" value="" required>
+      
+      
+       
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+
+        
+
+      </div>
+    </div>
+  </form> 
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="all.html">Back to home</a>
+    </li>   
+    </ul>
+</div>
+
+</body>
+
+
+
+    
+</body>
+
+</html>
